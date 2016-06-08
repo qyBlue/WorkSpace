@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DD69F76B275F6AF4DEC6061 /* libPods-ZQFreeLimit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE805578D2A1AC8341B8FBA /* libPods-ZQFreeLimit.a */; };
 		BCB64A621D07F129009E15D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB64A611D07F129009E15D7 /* main.m */; };
 		BCB64A651D07F129009E15D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB64A641D07F129009E15D7 /* AppDelegate.m */; };
 		BCB64A681D07F129009E15D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB64A671D07F129009E15D7 /* ViewController.m */; };
@@ -28,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AE805578D2A1AC8341B8FBA /* libPods-ZQFreeLimit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZQFreeLimit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2431C5E49DCF005B63D2F538 /* Pods-ZQFreeLimit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQFreeLimit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZQFreeLimit/Pods-ZQFreeLimit.debug.xcconfig"; sourceTree = "<group>"; };
+		91C875D2B765FE0D97579DD5 /* Pods-ZQFreeLimit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQFreeLimit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZQFreeLimit/Pods-ZQFreeLimit.release.xcconfig"; sourceTree = "<group>"; };
 		BCB64A5C1D07F129009E15D7 /* ZQFreeLimit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZQFreeLimit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB64A601D07F129009E15D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCB64A611D07F129009E15D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DD69F76B275F6AF4DEC6061 /* libPods-ZQFreeLimit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +68,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BBF2F2329A1B60E048B8527 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AE805578D2A1AC8341B8FBA /* libPods-ZQFreeLimit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA39BFD74E1FF03E1673FD18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2431C5E49DCF005B63D2F538 /* Pods-ZQFreeLimit.debug.xcconfig */,
+				91C875D2B765FE0D97579DD5 /* Pods-ZQFreeLimit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BCB64A531D07F129009E15D7 = {
 			isa = PBXGroup;
 			children = (
 				BCB64A5E1D07F129009E15D7 /* ZQFreeLimit */,
 				BCB64A781D07F129009E15D7 /* ZQFreeLimitTests */,
 				BCB64A5D1D07F129009E15D7 /* Products */,
+				BA39BFD74E1FF03E1673FD18 /* Pods */,
+				6BBF2F2329A1B60E048B8527 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCB64A7F1D07F129009E15D7 /* Build configuration list for PBXNativeTarget "ZQFreeLimit" */;
 			buildPhases = (
+				67426FC65C0CB0B4F9CCCB7C /* [CP] Check Pods Manifest.lock */,
 				BCB64A581D07F129009E15D7 /* Sources */,
 				BCB64A591D07F129009E15D7 /* Frameworks */,
 				BCB64A5A1D07F129009E15D7 /* Resources */,
+				B74E7C92CC0010D88980BE53 /* [CP] Embed Pods Frameworks */,
+				D3A341D58DF3617C5C46B63E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,6 +245,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67426FC65C0CB0B4F9CCCB7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B74E7C92CC0010D88980BE53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZQFreeLimit/Pods-ZQFreeLimit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3A341D58DF3617C5C46B63E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZQFreeLimit/Pods-ZQFreeLimit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BCB64A581D07F129009E15D7 /* Sources */ = {
@@ -353,6 +428,7 @@
 		};
 		BCB64A801D07F129009E15D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2431C5E49DCF005B63D2F538 /* Pods-ZQFreeLimit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZQFreeLimit/Info.plist;
@@ -363,6 +439,7 @@
 		};
 		BCB64A811D07F129009E15D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91C875D2B765FE0D97579DD5 /* Pods-ZQFreeLimit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZQFreeLimit/Info.plist;
