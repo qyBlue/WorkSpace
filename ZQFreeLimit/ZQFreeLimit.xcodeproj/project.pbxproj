@@ -14,6 +14,7 @@
 		BCB64A6D1D07F129009E15D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB64A6C1D07F129009E15D7 /* Images.xcassets */; };
 		BCB64A701D07F129009E15D7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB64A6E1D07F129009E15D7 /* LaunchScreen.xib */; };
 		BCB64A7C1D07F129009E15D7 /* ZQFreeLimitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB64A7B1D07F129009E15D7 /* ZQFreeLimitTests.m */; };
+		BCB64A8C1D07FB38009E15D7 /* ZQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB64A8B1D07FB38009E15D7 /* ZQViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		BCB64A751D07F129009E15D7 /* ZQFreeLimitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZQFreeLimitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB64A7A1D07F129009E15D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCB64A7B1D07F129009E15D7 /* ZQFreeLimitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQFreeLimitTests.m; sourceTree = "<group>"; };
+		BCB64A8A1D07FB38009E15D7 /* ZQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQViewController.h; sourceTree = "<group>"; };
+		BCB64A8B1D07FB38009E15D7 /* ZQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		BCB64A5E1D07F129009E15D7 /* ZQFreeLimit */ = {
 			isa = PBXGroup;
 			children = (
+				BCB64A8A1D07FB38009E15D7 /* ZQViewController.h */,
+				BCB64A8B1D07FB38009E15D7 /* ZQViewController.m */,
 				BCB64A631D07F129009E15D7 /* AppDelegate.h */,
 				BCB64A641D07F129009E15D7 /* AppDelegate.m */,
 				BCB64A661D07F129009E15D7 /* ViewController.h */,
@@ -222,6 +227,7 @@
 				BCB64A681D07F129009E15D7 /* ViewController.m in Sources */,
 				BCB64A651D07F129009E15D7 /* AppDelegate.m in Sources */,
 				BCB64A621D07F129009E15D7 /* main.m in Sources */,
+				BCB64A8C1D07FB38009E15D7 /* ZQViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +424,7 @@
 				BCB64A811D07F129009E15D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCB64A821D07F129009E15D7 /* Build configuration list for PBXNativeTarget "ZQFreeLimitTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				BCB64A841D07F129009E15D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
